@@ -89,6 +89,9 @@ class PostInsuranceGuaranteeWithIdentifierMethod extends AMethod {
             return $return;
            
         }
+        $erroJson = json_encode($objectResponse->data);
+        throw new \Plekhub\Pleksdk\Exceptions\ValidationException($objectResponse->message." -> ".$erroJson, 0,null,(array) $objectResponse->data->errors);
+        
     }
 
     private function createBody() {

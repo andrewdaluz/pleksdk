@@ -35,5 +35,8 @@ class GetPropertyTypeMethod extends AMethod {
             }
             return $return;
         }
+        throw new \Plekhub\Pleksdk\Exceptions\ValidationException($objectResponse->message);
+        
     }
+    
 }

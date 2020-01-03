@@ -2,9 +2,8 @@
 require "vendor/autoload.php";
 
 $autenticacao = new \Plekhub\Pleksdk\Authentication\Basic("plek","1FyX7uUjs3E8NzY0HwHcl_Vz8_Iqyv80");
-$curl = new \Plekhub\Pleksdk\Requisition\Curl("http://plekhub.local/api/web/");
-
-$getMartial = new \Plekhub\Pleksdk\Methods\PostInsuranceGuaranteeWithIdentifierMethod($curl, $autenticacao);
+//Plekhub\Pleksdk\Plekhub::setHomologationEnv();
+$getMartial = Plekhub\Pleksdk\Plekhub::postInsuranceGuaranteeWithIdentifierMethod($autenticacao);
 $getMartial->propety()
         ->setAddress("Rua falsa 123")
         ->setTypeId(1)

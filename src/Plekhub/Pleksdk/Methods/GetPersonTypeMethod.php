@@ -31,6 +31,8 @@ class GetPersonTypeMethod extends AMethod{
             }
             return $return;
         }
+        throw new \Plekhub\Pleksdk\Exceptions\ValidationException($objectResponse->message);
+        
     }
 
 }
