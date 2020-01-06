@@ -1,5 +1,20 @@
 {
+    "name": "plekhub/pleksdk",
+    "description": "Pacote para auxilio no consumo de dados da plekhub",
+    "authors": [
+        {
+            "name": "Cleomar Araújo",
+            "email": "cleomar@plek.com.br",
+            "role": "creator"
+        }
+    ],
+    "type": "libary",
+    "require": {
+        "php": ">5.6"
+    },
     "autoload": {
-        "psr-4": {"Plekhub\\Pleksdk\\": "src/Plekhub/Pleksdk/"}
+        "psr-4": {
+            "Plekhub\\Pleksdk\\": "src/Plekhub/Pleksdk/"
+        }
     }
 }
