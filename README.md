@@ -11,7 +11,7 @@ $getMartial = Plekhub\Pleksdk\Plekhub::getMaritalStatusMethod($autenticacao);
 $teste = $getMartial->execute();
 
 # Estados Civis / Listar todos os Estados Civis - resposta
-array(7) {
+array(7) { \n
   [0]=>
   object(Plekhub\Pleksdk\Entities\BasicEntity)#14 (2) {
     ["id":"Plekhub\Pleksdk\Entities\BasicEntity":private]=>
