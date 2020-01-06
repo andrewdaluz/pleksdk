@@ -30,7 +30,6 @@ class Curl extends ARequisition {
         if(!$response){
             throw new \Plekhub\Pleksdk\Exceptions\RequisitionException("Falha na comunicação com o servidor");
         }
-        var_dump($response);
         return $response;
     }
 
