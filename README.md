@@ -36,9 +36,8 @@ array(7) { <br>
 }<br>
 
 # Tipos de Pessoa/Listar todos os Tipos de Pessoa
-$personType = Plekhub\Pleksdk\Plekhub::getPersonTypeMethod($autenticacao);<br>
-
-$teste = $personType->execute();<br>
+    $personType = Plekhub\Pleksdk\Plekhub::getPersonTypeMethod($autenticacao);<br>
+    $teste = $personType->execute();<br>
 
 # Tipos de Pessoa/Listar todos os Tipos de Pessoa - resposta
 array(2) {<br>
