@@ -12,7 +12,6 @@ class Curl extends ARequisition {
     //put your code here
     public function request() {
         $ch = curl_init();
-        var_dump($this->createUrl());
         curl_setopt($ch, CURLOPT_URL, $this->createUrl());
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_HEADER, FALSE);
